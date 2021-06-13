@@ -1,0 +1,20 @@
+"插件自动管理
+filetype off
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'Shougo/neocomplcache'
+"Bundle 'Rip-Rip/clang_complete'
+Bundle 'Shougo/neocomplcache-clang'
+Bundle 'taglist.vim'
+Bundle 'bufkill.vim'
+Bundle 'jiangmiao/auto-pairs'
+Bundle 'scrooloose/nerdtree'
+Bundle 'scrooloose/nerdcommenter'
+Plugin 'nsf/gocode', {'rtp': 'vim/'}
+Plugin 'fatih/vim-go'
+Plugin 'AndrewRadev/go-oracle.vim'
+
+filetype plugin indent on
+

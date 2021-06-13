@@ -1,0 +1,50 @@
+"映射F5显示行号，参考vim 按键映射
+map <F5> <Esc>:set nu<CR>   
+"映射Ctrl+F5为不显示行号
+map <C-F5> <Esc>:set nonu<CR>   
+set nu
+set nocompatible
+
+"自动对齐    
+set autoindent
+set cindent
+
+"智能选择对齐方式    
+set smartindent
+
+"tab为4个空格    
+set tabstop=4
+set ts=4
+set expandtab
+set autoindent
+
+"当前行之间交错时使用4个空格    
+set shiftwidth=4
+
+"设置匹配模式，输入做括号会出现右括号    
+set showmatch
+
+"编辑时显示光标状态    
+set ruler
+
+"高亮查找  
+set hlsearch
+
+
+"显示状态栏
+"set laststatus=2
+set tags=tags;
+"set autochdir
+"使用语法高亮定义代码折叠
+set foldmethod=syntax
+"打开文件是默认不折叠代码
+set foldlevelstart=99
+set ignorecase smartcase
+set fileencodings=utf-8,ucs-bom,gb18030,gbk,gb2312,cp936
+"set mouse=a
+
+let Tlist_Show_One_File = 1
+let Tlist_Exit_OnlyWindow = 1
+"let Tlist_Use_Right_Window = 1
+let NERDTreeWinPos="right"
+set completeopt=menu

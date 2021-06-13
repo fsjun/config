@@ -1,0 +1,7 @@
+let g:neocomplcache_clang_use_library=0
+"let g:neocomplcache_clang_library_path='/usr/lib'
+let g:neocomplcache_clang_macros=1
+"let g:neocomplcache_clang_patterns=0
+let g:neocomplcache_clang_auto_options='path, .clang_complete'
+let g:neocomplcache_clang_user_options='-std=c++11 -I/usr/include -I/usr/include/c++/4.7.3/'
+let g:neocomplcache_clang_debug=1
