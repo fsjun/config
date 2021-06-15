@@ -1,5 +1,13 @@
 (provide 'config-normal)
 
+(xterm-mouse-mode)
+(global-set-key [mouse-4] (lambda () (interactive) (scroll-down 5)))
+(global-set-key [mouse-5] (lambda () (interactive) (scroll-up 5)))
+(global-set-key [S-mouse-4] (lambda () (interactive) (scroll-down 1)))
+(global-set-key [S-mouse-5] (lambda () (interactive) (scroll-up 1)))
+(global-set-key [C-mouse-4] (lambda () (interactive) (scroll-down)))
+(global-set-key [C-mouse-5] (lambda () (interactive) (scroll-up)))
+
 (setq stack-trace-on-error t)
 ;;(tool-bar-mode -1)
 (menu-bar-mode -1)
