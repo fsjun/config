@@ -22,3 +22,12 @@
   (add-hook 'lsp-mode-hook #'lsp-enable-which-key-integration)
   (require 'dap-cpptools)
   (yas-global-mode))
+
+(require 'clang-format)
+(add-hook 'c-mode-common-hook
+    (function (lambda ()
+        (add-hook 'before-save-hook 'clang-format-buffer))))
+
+(add-hook 'c++-mode-common-hook
+    (function (lambda ()
+        (add-hook 'before-save-hook 'clang-format-buffer))))
